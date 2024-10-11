@@ -1,0 +1,76 @@
+.capability-container {
+  position: absolute;
+  z-index: 20;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+}
+
+.ring-container {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  background-color: #47b868;
+  border-radius: 50%;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.ringring {
+  border: 3px solid #47b868;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  border-radius: 100%;
+  left: 10px;
+  top: 10px;
+  -webkit-animation: pulsate 1s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  opacity: 0;
+}
+@-webkit-keyframes pulsate {
+  0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
+  50% {opacity: 1.0;}
+  100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
+}
+
+.shadow {
+  box-shadow: 0px 0px 9px 4px rgb(255 255 255 / 75%);
+}
+
+.capability-block-container {
+
+}
+
+.capability-block-overlay {
+  background: rgb(0 0 0 / 30%);
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  transition: .5s ease;
+}
+
+.glow-border {
+  border: 2px solid white; /* some kind of blue border */
+  border-radius: 4px;
+  box-shadow: 0px 0px 4px white
+}
+
+.text-xxs {
+  font-size: 12px;
+}

@@ -1,0 +1,89 @@
+@import "../../styles/breakpoint.scss";
+
+.navigation {
+    ul {
+        margin: 0;
+        li {
+            margin: 10px 0px;
+            @include breakpoint($lg) {
+                margin: 1px 0px;
+            }
+            @include breakpoint($xl2) {
+                margin: 10px 0px;
+            }
+            a {
+                display: inline-block;
+                text-transform: uppercase;
+                position: relative;
+                @include breakpoint($lg) {
+                    font-size: 11px;
+                }
+                @include breakpoint($xl) {
+                    font-size: 13px;
+                }
+                @include breakpoint($xl2) {
+                    font-size: 18px;
+                }
+                &:hover {
+                    color: white;
+                    &:after {
+                        width: 100%;
+                        left: 0;
+                        background: #fff;
+                    }
+                }
+                &:after {
+                    content: "";
+                    position: absolute;
+                    width: 0;
+                    height: 3px;
+                    display: inline-block;
+                    bottom: -2px;
+                    right: 0;
+                    background: #fff;
+                    transition: width 0.35s ease;
+                    -webkit-transition: width 0.35s ease;
+                }
+            }
+        }
+    }
+}
+
+
+
+.internal-pages {
+    .navigation ul li a {
+        color: rgb(51 51 51 / 80%);
+        &:hover {
+            color: rgb(51 51 51 / 80%);
+            &:after {
+                background: rgb(51 51 51 / 80%);
+            }
+        }
+        &:after {
+            background: rgb(51 51 51 / 80%);
+        }
+    }
+    .navigation-container--active  {
+        ul li a {
+            color: white !important;
+        } 
+    }
+    .navigation-blue  {
+        ul li a {
+            color: white;
+        &:hover {
+            color: white;
+            &:after {
+                background: white;
+            }
+        }
+        &:after {
+            background: white;
+        }
+        } 
+    }
+}
+
+
+

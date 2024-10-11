@@ -1,0 +1,50 @@
+@import "../../styles/breakpoint.scss";
+
+.footer {
+    ul {
+        li {
+            margin-bottom: 4px;
+            @include breakpoint($xl2) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .link-main {
+        font-family: "gotham-bold";
+    }
+    .link-sub {
+        font-family: "gotham-book";
+    }
+    input::placeholder {
+        font-family: "gotham-book";
+    }
+    .link-main,
+    .link-sub {
+        display: inline-block;
+
+        position: relative;
+        &:hover {
+            color: #0667b5;
+            &:after {
+                width: 100%;
+                left: 0;
+                background: #0667b5;
+            }
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 3px;
+            display: inline-block;
+            bottom: -2px;
+            right: 0;
+            background: #0667b5;
+            transition: width 0.35s ease;
+            -webkit-transition: width 0.35s ease;
+        }
+    }
+    .gotham-bold {
+        font-family: "gotham-bold";
+    }
+}

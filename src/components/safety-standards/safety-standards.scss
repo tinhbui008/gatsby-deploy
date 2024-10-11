@@ -1,0 +1,52 @@
+.safety-standards,
+.safety-standards_single {
+  .card_safety {
+    background-image: linear-gradient(
+      to bottom,
+      #1568b2,
+      #0a5590,
+      #064270,
+      #063051,
+      #061f34
+    );
+  }
+  .swiper-wrapper {
+    padding-bottom: 3rem;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+.swiper_safety {
+  .swiper-button-next, 
+  .swiper-button-prev {
+    margin-top: -20px !important;
+  }
+  .swiper-slide {
+    width: auto;
+  }
+  // overflow: hidden;
+  // .openModalBtn {
+  //   overflow: hidden;
+  //   width: 75%;
+  //   display: flex;
+  //   justify-content: center;
+  // }
+}
+@media screen and (min-width: 1024px) {
+  .safety-standards,
+  .safety-standards_single {
+    .swiper-wrapper {
+      padding-bottom: 3rem;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+.above-all {
+  position: relative;
+  z-index: 50;
+}

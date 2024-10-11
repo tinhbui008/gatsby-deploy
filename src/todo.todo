@@ -1,0 +1,85 @@
+
+
+Close button placement and icon
+
+Icons of other BU appear when 1 pop-up is opened
+
+
+Contact -> Accordion style
+All titles and snippet words limit
+OUR WORK - highlight when hovered and other similar areas
+
+
+read more Icons position
+internal logo mobile not clickable
+
+
+animation ark -  quicker, start just before prev finishes
+change close button to X in office overlay and move in to central position - done
+our work - svg on mobile top left sizing issue - done
+latest news - title legth and title font - done
+our work - title font and length - done
+two lines for our work title - done
+footer - prevent lg screen scrolling in to footer
+
+
+// mobile
+internal logo to change to group - done
+make logo clickable - done
+page corner on homepage - done
+capabilities page mobile - done
+mobile nav group logo opened - done
+news menu stay at the top - done
+news width container 10px smaller - done
+news read more to be the same - done
+news tab to sit flush at the top left - needs wip
+
+safety quality homepage - done
+together
+spacing between images - done
+navigation to be same position as the slide item ??
+mobile - two cards too close 
+
+// news internal page - mobile
+single card on mobile stack - done
+mobile hide description - done
+
+
+// our work
+ make single card  - done
+ filters to say Business Unit and Industry - done
+ pagination for 9 items - done
+
+ // known issues
+ gotham-bold not working safari osx
+
+// tritodo
+title length - done
+close button - done
+connnect globe to wp - wip
+
+today
+office pins to the right - done
+gotham bold safari - don
+capabilities - same size and same opacity 100% - done
+
+our work - glow on hover homepage
+
+safety quality cert glow on hover - done
+
+careers - heros photo before text
+gradient on photo - done
+
+contact 
+- remove globe on mobile - done
+
+read more - 
+
+min height 100vh 
+
+smoother circles - done
+
+
+// careers - bottom text
+// join us
+Rollback WP GraphQL to 1.13.7 - trigger build

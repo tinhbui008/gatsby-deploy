@@ -1,0 +1,51 @@
+@import "../../../styles/breakpoint.scss";
+
+.office-block {
+  position: absolute;
+  z-index: 50;
+  max-width: 680px;
+  bottom: 0px;
+  right: 0px;
+  left: 0;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 4rem;
+  @include breakpoint($lg) {
+    max-width: 680px;
+    padding: 0;
+  }
+ 
+}
+
+.office-block-container {
+
+}
+
+.office-block-overlay {
+  z-index: 15;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  transition: .5s ease;
+  @include breakpoint($lg) {
+    background: rgb(0 0 0 / 72%);
+  }
+}
+
+.glow-border {
+  border: 2px solid white; /* some kind of blue border */
+  border-radius: 4px;
+  box-shadow: 0px 0px 4px white
+}
+
+.text-xxs {
+  font-size: 12px;
+}

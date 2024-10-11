@@ -1,0 +1,351 @@
+@import "./breakpoint.scss";
+.swiper {
+  position: relative;
+ 
+  .slider-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0) 47%,
+      rgba(0, 0, 0, 0.7346288857339811) 92%
+    );
+    opacity: 0;
+    z-index: 2;
+    transition: opacity 0.3s ease;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    margin-top: -20px;
+    border-color: white;
+    cursor: pointer;
+    background-image: url("../../static/images/arrow_blue.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: opacity 0.3s ease;
+    @include breakpoint($xl) {
+      opacity: 0;
+    }
+    &::before {
+      content: "";
+      box-shadow: #1a1a1a 3px 4px 9px;
+    }
+  }
+  .swiper-button-prev {
+    transform: rotate(180deg);
+  }
+  
+  &.swiper_safety {
+    .swiper-button-next,
+    .swiper-button-prev {
+      top: 35%;
+    }
+    .swiper-button-prev {
+      left: 0;
+    }
+    .swiper-button-next {
+      right: 0;
+    }
+  }
+  &.slider-white-layout {
+    .swiper-button-next,
+    .swiper-button-prev {
+      background-image: url("../../static/images/arrow_white.svg");
+    }
+  }
+
+  &:hover {
+    .swiper-button-next,
+    .swiper-button-prev {
+      opacity: 1;
+      &.swiper-button-disabled {
+        opacity: 0.35;
+      }
+    }
+    .slider-overlay {
+      opacity: 1;
+    }
+  }
+  .swiper-button-next::after {
+    display: none;
+  }
+
+  .swiper-button-prev::after {
+    display: none;
+  }
+}
+
+
+
+//Spotlight slider custom
+.spotlight-wrapper {
+  position: relative;
+  margin-bottom: 40px;
+  .swiperCareers {
+    @include breakpoint($lg) {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+  }
+
+  .prev-spotlight,
+  .next-spotlight {
+    position: absolute;
+    cursor: pointer;
+    bottom: -20px;
+    background-image: url("../../static/images/arrow_blue.svg");
+    height: 40px;
+    width: 40px;
+    z-index: 2;
+    transition: opacity 0.3s ease;
+  }
+  &.white-arrow {
+    .prev-spotlight,
+    .next-spotlight {
+      background-image: url("../../static/images/arrow_white.svg");
+    }
+  }
+  @include breakpoint($lg) {
+    .prev-spotlight,
+    .next-spotlight {
+      opacity: 0;
+      bottom: auto;
+      top: 50%;
+      margin-top: -20px;
+    }
+  }
+  .prev-spotlight {
+    transform: rotate(180deg);
+    left: 0;
+    @include breakpoint($lg) {
+      transform: rotate(180deg);
+    }
+  }
+  .next-spotlight {
+    left: 60px;
+    @include breakpoint($lg) {
+      left: auto;
+      right: 0;
+    }
+  }
+  &:hover {
+    .prev-spotlight,
+    .next-spotlight {
+      opacity: 1;
+    }
+  }
+}
+// Feature thinker, Moment slider custom
+.full-width-slider {
+  position: relative;
+  .slider-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0) 47%,
+      rgba(0, 0, 0, 0.7346288857339811) 92%
+    );
+    opacity: 0;
+    z-index: 2;
+    transition: opacity 0.3s ease;
+  }
+  .prev,
+  .next {
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    margin-top: -20px;
+    background-image: url("../../static/images/arrow_blue.svg");
+    height: 40px;
+    width: 40px;
+    z-index: 2;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    
+  }
+
+  @include breakpoint($lg) {
+    .prev,
+    .next {
+      background-image: url("../../static/images/arrow_white.svg");
+      opacity: 0;
+    }
+  }
+  .prev {
+    transform: rotate(180deg) translateX(110%);
+    left: 0px;
+    @include breakpoint($lg) {
+      left: 20px;
+      transform: rotate(180deg) translateX(0);
+    }
+  }
+  .next {
+    right: 0px;
+    transform: translateX(110%);
+    @include breakpoint($lg) {
+      right: 20px;
+      transform: translateX(0);
+    }
+  }
+  &:hover {
+    .prev,
+    .next {
+      opacity: 1;
+      &.swiper-button-disabled {
+        opacity: 0.35;
+    }
+    }
+    .slider-overlay {
+      opacity: 1;
+    }
+  }
+}
+
+// Our Project slider custom
+.project-slider {
+  position: relative;
+  .slider-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0) 47%,
+      rgba(0, 0, 0, 0.7346288857339811) 92%
+    );
+    opacity: 0;
+    z-index: 2;
+    transition: opacity 0.3s ease;
+  }
+  .prev,
+  .next {
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    margin-top: -20px;
+    background-image: url("../../static/images/arrow_blue.svg");
+    height: 40px;
+    width: 40px;
+    z-index: 2;
+    transition: opacity 0.3s ease;
+  }
+
+  @include breakpoint($lg) {
+    .prev,
+    .next {
+      background-image: url("../../static/images/arrow_white.svg");
+      opacity: 0;
+    }
+  }
+  .prev {
+    transform: rotate(180deg) translateX(110%);
+    left: 40px;
+    @include breakpoint($lg) {
+      left: 30px;
+      transform: rotate(180deg) translateX(0);
+    }
+  }
+  .next {
+    right: 40px;
+    transform: translateX(110%);
+    @include breakpoint($lg) {
+      right: 30px;
+      transform: translateX(0);
+    }
+  }
+  &:hover {
+    .prev,
+    .next {
+      opacity: 1;
+    }
+    .slider-overlay {
+      opacity: 1;
+    }
+  }
+}
+
+// Our Project slider custom
+.project-slider {
+  position: relative;
+  .slider-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0) 47%,
+      rgba(0, 0, 0, 0.7346288857339811) 92%
+    );
+    opacity: 0;
+    z-index: 2;
+    transition: opacity 0.3s ease;
+  }
+  .prev,
+  .next {
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    margin-top: -20px;
+    background-image: url("../../static/images/arrow_blue.svg");
+    height: 40px;
+    width: 40px;
+    z-index: 2;
+    transition: opacity 0.3s ease;
+  }
+
+  @include breakpoint($lg) {
+    .prev,
+    .next {
+      background-image: url("../../static/images/arrow_white.svg");
+      opacity: 0;
+    }
+  }
+  .prev {
+    transform: rotate(180deg) translateX(110%);
+    left: 40px;
+    @include breakpoint($lg) {
+      left: 30px;
+      transform: rotate(180deg) translateX(0);
+    }
+  }
+  .next {
+    right: 40px;
+    transform: translateX(110%);
+    @include breakpoint($lg) {
+      right: 30px;
+      transform: translateX(0);
+    }
+  }
+  &:hover {
+    .prev,
+    .next {
+      opacity: 1;
+    }
+    .slider-overlay {
+      opacity: 1;
+    }
+  }
+}

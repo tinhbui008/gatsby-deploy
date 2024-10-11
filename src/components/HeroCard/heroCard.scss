@@ -1,0 +1,22 @@
+@import "../../styles/breakpoint.scss";
+.card_director {
+  align-items: flex-start;
+  @include breakpoint($lg) {
+    align-items: inherit;
+  }
+  .director {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    @include breakpoint($lg) {
+      margin: 0 auto -67px auto;
+    }
+  }
+  .director.warehousing {
+    max-width: 300px;
+    @include breakpoint($xl) {
+      max-width: 400px;
+    }
+  }
+}

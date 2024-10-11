@@ -1,0 +1,30 @@
+.video-modal {
+    .modal-video_container {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    iframe {
+        width: 320px;
+        height: 220px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .video-modal {
+        iframe {
+            width: 500px;
+            height: 320px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .video-modal {
+        iframe {
+            width: 700px;
+            height: 500px;
+        }
+    }
+}

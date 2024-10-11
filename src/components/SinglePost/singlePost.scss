@@ -1,0 +1,51 @@
+@import "../../styles/breakpoint.scss";
+
+.post-item {
+  &:hover {
+    .post-image {
+      box-shadow: 0 0 9px 4px hsl(0deg 0% 100% / 75%);
+      transition: box-shadow 0.2s ease;
+    }
+  }
+}
+
+.image-text {
+  bottom: -10%;
+  height: 65px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+
+  @include breakpoint($md) {
+    bottom: -15%;
+    height: 85px;
+    align-items: flex-start;
+  }
+
+  @include breakpoint($lg) {
+    bottom: auto;
+  }
+
+  .post-title {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+}
+
+.card .post-image img {
+  @include breakpoint($lg) {
+    border: none;
+  }
+}
+
+.excerpt {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  height: 80px;
+
+  @include breakpoint($lg) {
+    display: -webkit-box;
+  }
+}

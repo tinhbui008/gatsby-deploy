@@ -1,0 +1,107 @@
+@import "../../styles/breakpoint.scss";
+
+.gallery {
+  position: relative;
+
+  .big-slider {
+    overflow: visible;
+  }
+
+  .prev,
+  .next {
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    margin-top: -20px;
+    background-image: url("../../../static/images/arrow_blue.svg");
+    height: 40px;
+    width: 40px;
+    z-index: 2;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+
+  }
+
+  @include breakpoint($lg) {
+
+    .prev,
+    .next {
+      background-image: url("../../../static/images/arrow_white.svg");
+      opacity: 0;
+    }
+  }
+
+  .prev {
+    transform: rotate(180deg) translateX(110%);
+    left: 0px;
+
+    @include breakpoint($lg) {
+      left: 20px;
+      transform: rotate(180deg) translateX(0);
+    }
+  }
+
+  .next {
+    right: 0px;
+    transform: translateX(110%);
+
+    @include breakpoint($lg) {
+      right: 20px;
+      transform: translateX(0);
+    }
+  }
+
+  &:hover {
+
+    .prev,
+    .next {
+      opacity: 1;
+
+      &.swiper-button-disabled {
+        opacity: 0.35;
+      }
+    }
+
+    .slider-overlay {
+      opacity: 1;
+    }
+  }
+
+  .swiper-slide {
+    margin: 0 10px;
+    text-align: center;
+
+    img {
+      object-fit: cover;
+    }
+  }
+}
+
+.thumbs-swiper {
+  display: flex;
+  justify-content: center;
+
+  // .swiper-wrapper {
+  //   width: fit-content;
+  // }
+
+  .swiper-slide {
+    opacity: 0.4;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+}
+
+.swiper-slide {
+  img {
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  width: 100%;
+}

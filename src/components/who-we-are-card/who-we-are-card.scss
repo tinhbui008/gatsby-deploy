@@ -1,0 +1,52 @@
+@import "../../styles/breakpoint.scss";
+
+.card-who-we-are {
+  .arwes-frame {
+    width: 100%;
+  }
+  .gotham-bold {
+    font-family: "gotham-bold";
+  }
+  .conthrax-bold {
+    font-family: "conthrax-bold";
+  }
+  .shadow {
+    box-shadow: 0px 0px 20px 4px rgb(255 255 255 / 34%);
+  }
+
+  .video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    @include breakpoint($lg) {
+    }
+    video {
+      position: absolute;
+      z-index: 0;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      @include breakpoint($lg) {
+        object-fit: contain;
+      }
+    }
+  }
+
+  .overlay_video {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: rgba(0, 0, 0, 0.7);
+    background-size: 3px 3px;
+    z-index: 0;
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+  }
+}
+.above-all {
+  position: relative;
+  z-index: 50;
+}

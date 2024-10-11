@@ -1,0 +1,83 @@
+@import "../../styles/breakpoint.scss";
+
+.page-loader-container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: #001728;
+  @apply bg-dark_blue;
+  @include breakpoint($lg) {
+    background: #001728;
+  }
+  > div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+  }
+  .page-loader {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    .content {
+      margin: auto;
+      text-align: center;
+    }
+}
+}
+
+canvas {
+  width: 100vw;
+  height: 100vh;
+}
+
+ svg .svg-elem-1 {
+  animation: color-green 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) ;
+  animation-fill-mode: forwards;
+
+}
+
+svg .svg-elem-2 {
+  animation: color-green 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) ;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+svg .svg-elem-3 {
+  animation: color-green 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) ;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+svg .svg-elem-4 {
+  animation: color-blue 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) ;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes color-green {
+  0% {
+    fill:#0b0d19
+  }
+  100% {
+    fill: rgb(70, 183, 103)
+  }
+}
+
+@keyframes color-blue {
+  0% {
+    fill:#0b0d19
+  }
+  100% {
+    fill: rgb(9, 104, 176);
+  }
+}

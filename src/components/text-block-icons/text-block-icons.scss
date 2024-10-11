@@ -1,0 +1,20 @@
+.icons {
+  h5 {
+    font-family: "gotham-bold";
+  }
+}
+.arrow {
+  transition: transform 0.2s ease;
+  &.active {
+    transform: rotate(180deg);
+  }
+}
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  &.active {
+    transition: max-height 0.5s ease;
+    // max-height: 500px;
+  }
+}

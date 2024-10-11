@@ -1,0 +1,47 @@
+@import "../../styles/breakpoint.scss";
+
+.swiperCareers {
+  .spotlight_content {
+    p:nth-of-type(3) {
+      margin-bottom: 2rem;
+    }
+  }
+  .spotlight_content {
+    p:nth-of-type(4) {
+      color: #47b868;
+      font-family: "conthrax-bold";
+      text-transform: uppercase;
+    }
+  }
+  .spotlight_content {
+    p:nth-of-type(5) {
+      color: white;
+      font-family: "gotham-bold";
+      text-transform: uppercase;
+    }
+  }
+
+  // position the buttons on the sides of the container
+}
+.conthrax-bold {
+  font-family: "conthrax-bold";
+}
+.gotham-bold {
+  font-family: "gotham-bold";
+}
+
+.has-overlay {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: 3px 3px;
+  z-index: 0;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.09567577030812324) 0%,
+    rgba(0, 0, 0, 0.19931722689075626) 50%
+  );
+  height: 100%;
+}

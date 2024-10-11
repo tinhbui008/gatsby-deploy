@@ -1,0 +1,14 @@
+.post_content {
+    iframe {
+        width: 100%;
+        padding-right: 44px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .post_content {
+        iframe {
+            padding-right: 0px;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "conthrax-bold";
+    src: url("../fonts/Conthrax/conthrax_bold-webfont.woff2") format("woff2"),
+        url("../fonts/Conthrax/conthrax_bold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "conthrax-heavy";
+    src: url("../fonts/Conthrax/conthraxheavy-webfont.woff2") format("woff2"),
+        url("../fonts/Conthrax/conthraxheavy-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "gotham-bold";
+    src: url("../fonts/Gotham/gotham-bold.woff2") format("woff2"),
+        url("../fonts/Gotham/gotham-bold.woff") format("woff");
+}
+@font-face {
+    font-family: "gotham-book";
+    src: url("../fonts/Gotham/gothambookregular.woff2") format("woff2"),
+    url("../fonts/Gotham/gothambookregular.woff") format("woff");
+}
+
+.gotham-bold {
+    font-family: "gotham-bold";
+}
+
+.gotham-book {
+    font-family: "gotham-book";
+}

@@ -1,0 +1,20 @@
+<svg id="Group_31_copy" data-name="Group 31 copy" xmlns="http://www.w3.org/2000/svg" width="95.438" height="95.44" viewBox="0 0 95.438 95.44">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #41b867;
+        stroke: #000;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        font-size: 40px;
+        fill: #fff;
+        font-family: Gotham;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M772.293,7859.97a47.22,47.22,0,1,1-47.219,47.22A47.226,47.226,0,0,1,772.293,7859.97Z" transform="translate(-724.562 -7859.47)"/>
+  <text id="icon" class="cls-2" transform="translate(15.554 53.885) scale(0.696)">icon</text>
+</svg>

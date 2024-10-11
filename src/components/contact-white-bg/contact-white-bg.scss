@@ -1,0 +1,7 @@
+@import "../../styles/breakpoint.scss";
+.office {
+  grid-column: 1/12;
+  @include breakpoint($md) {
+    grid-column: 7/12;
+  }
+}

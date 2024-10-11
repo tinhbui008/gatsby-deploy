@@ -1,0 +1,31 @@
+@import "../../styles/breakpoint.scss";
+
+.internal {
+  .svg-circle-dash {
+    transform: none;
+    position: relative;
+    top: -4rem;
+    right: -3rem;
+    width: 215px;
+    height: 215px;
+    
+    .svg-circle {
+      transform: scale(0.5);
+    }
+  }
+  @include breakpoint($lg) {
+    .svg-circle-dash {
+      top: 0rem;
+      right: -5rem;
+      transform: translateX(60px) translateY(-200px);
+      width: 500px;
+      height: 500px;
+      .svg-circle {
+        transform: scale(1);
+       
+      }
+    }
+  }
+
+}
+

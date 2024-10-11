@@ -1,0 +1,17 @@
+.fls-snapshot {
+  .swiper {
+    padding-bottom: 6rem;
+  }
+  .swiper-slide {
+    > div {
+      @apply bg-light_blue;
+      background: #83acd5;
+    }
+
+    &.swiper-slide-active {
+      > div {
+        @apply bg-light_blue;
+      }
+    }
+  }
+}

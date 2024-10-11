@@ -1,0 +1,18 @@
+[
+    {
+        "fromPath": "/capabilities/trading",
+        "toPath": "/trading"
+    },
+    {
+        "fromPath": "/capabilities/projects",
+        "toPath": "/projects"
+    },
+    {
+        "fromPath": "/capabilities/warehousing",
+        "toPath": "/warehousing"
+    },
+    {
+        "fromPath": "/capabilities/logistics",
+        "toPath": "/logistics"
+    }
+]
