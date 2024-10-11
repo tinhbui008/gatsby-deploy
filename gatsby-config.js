@@ -50,7 +50,7 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress`,
       options: {
-        url: process.env.WPGRAPHQL_URL,
+        url: process.env.WPGRAPHQL_URL ?? '',
         schema: {
           timeout: 100000,
         },
